@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Properties CheatSheet</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#background" >Background</a></li>
+                <li><a href="#border">Border</a></li>
+                <li><a href="#floats">Floats</a></li>
+                <li><a href="#fonts">fonts</a></li>
+                <li><a href="#margin/padding">Margin & Padding</a></li>
+                <li><a href="#positioning">Positioning</a></li>
+                <li><a href="#width/Height">Width & Height</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <header>
+            <h1>CSS Properties CheatSheet</h1>
+        </header>
+
+        <div class="properties">
+
+            <div id="background">
+                <h2>Background</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="property">background-color</span>
+                            </td>
+                            <td>sets the background color of an element</td>
+                            <td>"color"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">background-image</span>
+                            </td>
+                            <td>sets one or more background images on an element</td>
+                            <td>none, url: ("")</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">background-position</span>
+                            </td>
+                            <td>sets the initial position for each background image. The position is relative to the position layer set by background-origin</td>
+                            <td>top, bottom, left, right, center, "percentage", "length"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">background-repeat</span>
+                            </td>
+                            <td>sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all</td>
+                            <td>repeat-x, repeat-y, repeat, space, round, no-repeat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="border">
+                <h2>Border</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="property">border</span>
+                            </td>
+                            <td>sets an element's border</td>
+                            <td>color, style, width</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">border-color</span>
+                            </td>
+                            <td>sets the color of an element's border</td>
+                            <td>"color t/r/b/l", inherit, initial, revert, revert-layer, unset</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">border-width</span>
+                            </td>
+                            <td>sets the width of an element's border</td>
+                            <td>top, bottom, left, right, center, thin, medium, thick</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">border-style</span>
+                            </td>
+                            <td>sets the line style for all four sides of an element's border</td>
+                            <td>none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">border-radius</span>
+                            </td>
+                            <td>rounds the corners of an element's outer border edge</td>
+                            <td>top, right, bottom, left, "percentage", "length"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="floats">
+                <h2>Floats</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="property">float</span>
+                            </td>
+                            <td>places an element on the left or right side of its container, allowing text and inline elements to wrap around it</td>
+                            <td>left, right, none, inline-start, inline-end</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">clear</span>
+                            </td>
+                            <td>sets whether an element must be moved below (cleared) floating elements that precede it</td>
+                            <td>none, left, right, both, inline-start, inline-end</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">overflow</span>
+                            </td>
+                            <td>sets the desired behavior for an element's overflow</td>
+                            <td>visible, hidden, clip, scroll, auto, hidden visible</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="fonts">
+                <h2>Fonts</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="property">color</span>
+                            </td>
+                            <td>sets the foreground color value of an element's text and text decorations, and sets the currentcolor value</td>
+                            <td>color name, hex, rbg(a), hsl(a)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">font</span>
+                            </td>
+                            <td>sets all the different properties of an element's font</td>
+                            <td>family, size, stretch, style, variant, weight</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">font-family</span>
+                            </td>
+                            <td>specifies a prioritized list of one or more font family names and/or generic family names for the selected element</td>
+                            <td>"font name", serif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, emoji, math, fangsong</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">font-style</span>
+                            </td>
+                            <td>sets whether a font should be styled with a normal, italic, or oblique face from its font-family</td>
+                            <td>normal, italic, oblique, oblique 10deg</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">font-weight</span>
+                            </td>
+                            <td>sets the weight (or boldness) of the font. The weights available depend on the font-family that is currently set</td>
+                            <td>normal, bold, lighter, bolder, number "100 - 900"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">font-variant</span>
+                            </td>
+                            <td>allows you to set all the font variants for a font.</td>
+                            <td>small-caps, common-ligatures small-caps</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">font-size</span>
+                            </td>
+                            <td>sets the size of the font</td>
+                            <td>xx-small, x-small, small, medium, large, x-large, xx-large, xxx-large</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">line-height</span>
+                            </td>
+                            <td>sets the height of a line box. It's commonly used to set the distance between lines of text</td>
+                            <td>normal, "number multiplies font size"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="margin/padding">
+                <h2>Margin & Padding</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="property">margin</span>
+                            </td>
+                            <td>sets the margin area on all four sides of an element</td>
+                            <td>margin-top/right/bottom/left </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">padding</span>
+                            </td>
+                            <td>sets the padding area on all four sides of an element at once</td>
+                            <td>padding-top/right/bottom/left</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="positioning">
+                <h2>Positioning</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="property">display</span>
+                            </td>
+                            <td>sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex</td>
+                            <td>block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">position</span>
+                            </td>
+                            <td>sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements</td>
+                            <td>static, relative, absolute, fixed, sticky</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">z-index</span>
+                            </td>
+                            <td>sets the z-order of a positioned element and its descendants or flex items</td>
+                            <td>auto, integer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="width/Height">
+                <h2>Width & Height</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="property">width</span>
+                            </td>
+                            <td>sets an element's width</td>
+                            <td>"length", "percentage"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">height</span>
+                            </td>
+                            <td>specifies the height of an element</td>
+                            <td>"length", "percentage"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">min-width</span>
+                            </td>
+                            <td>sets the minimum width of an element</td>
+                            <td>"length", "percentage"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">max-width</span>
+                            </td>
+                            <td>sets the maximum width of an element</td>
+                            <td>"length", "percentage"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">min-height</span>
+                            </td>
+                            <td>sets the minimum height of an element</td>
+                            <td>"length", "percentage"</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="property">max-height</span>
+                            </td>
+                            <td>sets the maximum height of an element</td>
+                            <td>"length", "percentage"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
